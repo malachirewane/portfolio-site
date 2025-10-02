@@ -1,0 +1,8 @@
+body {
+  font-size: 18px;
+  max-width: 1200px;
+  margin: auto;
+}
+nav ul {
+  justify-content: flex-end;
+}
