@@ -1,19 +1,20 @@
-/* Base Styles (shared across devices) */
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #F5F5F5; /* neutral gray */
 }
 
-/* Navigation */
+/* Navigation bar with linear gradient */
 nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #4CAF50, #2E7D32);
+  background: linear-gradient(to right, #0D47A1, #1565C0); /* deep → bright blue */
 }
 nav ul li {
   margin: 0 15px;
@@ -25,10 +26,23 @@ nav ul li a {
   display: inline-block;
 }
 
-/* Footer */
+/* Footer with angled gradient */
 footer {
   text-align: center;
   padding: 15px;
-  background: linear-gradient(45deg, #2196F3, #0D47A1);
+  background: linear-gradient(45deg, #1565C0, #0D47A1);
   color: white;
+}
+
+/* Buttons + hover */
+button, nav ul li a:hover {
+  background-color: #00C853; /* green accent */
+  color: white;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+/* Highlight hover effects */
+a:hover {
+  color: #FFAB00; /* amber accent */
 }
