@@ -1,8 +1,18 @@
-body {
-  font-size: 18px;
-  max-width: 1200px;
-  margin: auto;
+/* Laptop overrides for header and footer */
+header {
+  width: 100%;
+  padding: 36px 0;
+  background: linear-gradient(90deg, #4A00E0, #8E2DE2, #E100FF);
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
 }
-nav ul {
-  justify-content: flex-end;
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #00F5A0, #00D9F5, #007CF0);
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
 }
