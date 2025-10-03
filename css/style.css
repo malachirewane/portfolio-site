@@ -1,48 +1,77 @@
-/* Base Styles */
+/* Reset body margins so header/footer span full width */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #F5F5F5; /* neutral gray */
+  font-family: 'Merriweather', serif;
 }
 
-/* Navigation bar with linear gradient */
-nav ul {
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #4A00E0, #8E2DE2, #E100FF); /* purple → magenta → pink */
+  color: white;
+  width: 100%;              /* make header span full width */
+  box-sizing: border-box;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #0D47A1, #1565C0); /* deep → bright blue */
-}
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
+  gap: 25px;
+  width: 100%;
+  max-width: 900px;
 }
 
-/* Footer with angled gradient */
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #FFD700; /* gold hover effect */
+  text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+}
+
+/* Intro Section on Home */
+.intro {
+  text-align: center;     /* centers text */
+  max-width: 700px;       /* keeps text narrow for readability */
+  margin: 60px auto;      /* centers block horizontally with spacing */
+  padding: 20px;
+}
+
+.intro h2 {
+  font-size: 2rem;        /* larger greeting */
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1.2rem;      /* slightly larger paragraph */
+  color: #444;            /* softer gray for readability */
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  background: linear-gradient(45deg, #1565C0, #0D47A1);
+  padding: 20px;
+  background: linear-gradient(135deg, #00F5A0, #00D9F5, #007CF0); /* aqua → teal → blue */
   color: white;
-}
-
-/* Buttons + hover */
-button, nav ul li a:hover {
-  background-color: #00C853; /* green accent */
-  color: white;
-  border-radius: 4px;
-  transition: 0.3s ease;
-}
-
-/* Highlight hover effects */
-a:hover {
-  color: #FFAB00; /* amber accent */
+  font-size: 14px;
+  width: 100%;             /* make footer span full width */
+  box-sizing: border-box;
 }
