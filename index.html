@@ -1,44 +1,53 @@
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures the site is mobile-friendly by scaling correctly on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed on the browser tab -->
     <title>Malachi Rewane - Portfolio</title>
     
-    <!-- CSS Links -->
+    <!-- Linking external CSS stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Mobile stylesheet applies when screen width ≤ 600px -->
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+    <!-- Tablet stylesheet applies between 601px and 1024px -->
     <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <!-- Laptop stylesheet applies when screen width ≥ 1025px -->
     <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1025px)">
 
-    <!-- Google Font (Merriweather for all text) -->
+    <!-- Importing Google Font (Merriweather) for all text -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Page-Wide Font Styling -->
+    <!-- Inline styling for general text and headings -->
     <style>
         body {
-            font-family: 'Merriweather', serif;
-            line-height: 1.6;   /* better readability */
+            font-family: 'Merriweather', serif; /* sets font for all text */
+            line-height: 1.6;   /* improves readability */
             font-size: 16px;    /* base font size */
-            color: #222;        /* dark grey text for contrast */
-            margin: 0;
-            padding: 0;
+            color: #222;        /* dark grey for body text */
+            margin: 0;          /* remove default browser margins */
+            padding: 0;         /* remove default browser padding */
         }
         h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;   /* bold headings */
-            margin-top: 1em;
-            margin-bottom: 0.5em;
+            font-weight: 700;   /* makes headings bold */
+            margin-top: 1em;    /* spacing above headings */
+            margin-bottom: 0.5em; /* spacing below headings */
         }
         p {
-            margin-bottom: 1em;
+            margin-bottom: 1em; /* adds space after each paragraph */
         }
     </style>
 </head>
 <body>
+    <!-- Header section contains the site title and navigation menu -->
     <header>
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
+                <!-- Navigation links connect to all main pages -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -47,13 +56,16 @@
         </nav>
     </header>
 
+    <!-- Main content of the home page -->
     <main>
         <article class="intro">
+            <!-- Personal introduction -->
             <h2>Hello, I'm Malachi 👋</h2>
             <p>Explore my projects, learn more about who I am, and let’s connect!</p>
         </article>
     </main>
 
+    <!-- Footer contains copyright and contact info -->
     <footer>
         <p>© 2025 Malachi Rewane | Contact: <a href="mailto:mr.rewane@gmail.com">mr.rewane@gmail.com</a></p>
     </footer>

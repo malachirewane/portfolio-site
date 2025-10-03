@@ -1,64 +1,85 @@
 <!DOCTYPE html>
+<!-- Declares this is an HTML5 document -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Makes the site responsive to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed on browser tab -->
     <title>Malachi Rewane - Portfolio</title>
     
-    <!-- CSS Links -->
+    <!-- CSS Files for responsive design -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Mobile styles (applies when width ≤ 600px) -->
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+    <!-- Tablet styles (applies when width between 601px and 1024px) -->
     <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <!-- Laptop styles (applies when width ≥ 1025px) -->
     <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1025px)">
 
-    <!-- Google Font (Merriweather for all text) -->
+    <!-- Google Fonts (Merriweather used across all text) -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Inline CSS styles for layout and project cards -->
     <style>
         body {
-            font-family: 'Merriweather', serif;
-            line-height: 1.6;
-            font-size: 16px;
-            color: #222;
+            font-family: 'Merriweather', serif; /* set global font */
+            line-height: 1.6;   /* improve readability */
+            font-size: 16px;    /* base font size */
+            color: #222;        /* dark text for contrast */
             margin: 0;
             padding: 0;
         }
+
         h1, h2 {
-            font-weight: 700;
+            font-weight: 700;   /* make headings bold */
             margin-top: 1em;
             margin-bottom: 0.5em;
         }
+
+        /* Project grid layout: flexible columns depending on screen size */
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            gap: 30px; /* space between project cards */
             padding: 20px;
         }
+
+        /* Individual project card styling */
         .project-card {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
+            background: #fff; /* white card background */
+            border-radius: 12px; /* rounded corners */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow effect */
+            overflow: hidden; /* ensures rounded edges also apply to images */
+            transition: transform 0.3s ease; /* hover animation */
         }
+
+        /* Hover effect: card moves slightly upward */
         .project-card:hover {
             transform: translateY(-5px);
         }
+
+        /* Project images: fixed height, cropped neatly */
         .project-card img {
             width: 100%;
             height: 180px;
-            object-fit: cover;
+            object-fit: cover; /* keeps image ratio but fills the box */
         }
+
+        /* Card content: text area under the image */
         .project-card .content {
             padding: 15px;
         }
     </style>
 </head>
 <body>
+    <!-- Header section with site title and navigation -->
     <header>
         <h1>My Projects</h1>
         <nav>
             <ul>
+                <!-- Links to other pages in the portfolio -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -67,38 +88,39 @@
         </nav>
     </header>
 
+    <!-- Main content area showing project cards -->
     <main>
         <section class="projects">
-            <!-- Project 1 -->
+            <!-- Project 1 card -->
             <article class="project-card">
-                <img src="images\face-recognition.jpg" alt="Face Detection Project">
+                <img src="images/face-recognition.jpg" alt="Face Detection Project">
                 <div class="content">
                     <h2>Face Detection with OpenCV</h2>
                     <p>Python project detecting faces in real-time using OpenCV.</p>
                 </div>
             </article>
 
-            <!-- Project 2 -->
+            <!-- Project 2 card -->
             <article class="project-card">
-                <img src="images\Screenshot 2025-10-03 012538.png" alt="Website Security Project">
+                <img src="images/Screenshot-2025-10-03-012538.png" alt="Website Security Project">
                 <div class="content">
                     <h2>Website Security Review</h2>
                     <p>Tested websites for common vulnerabilities and improved security.</p>
                 </div>
             </article>
 
-            <!-- Project 3 -->
+            <!-- Project 3 card -->
             <article class="project-card">
-                <img src="images\sdassdasdasd.jpg" alt="Game Prototype Project">
+                <img src="images/sdassdasdasd.jpg" alt="Game Prototype Project">
                 <div class="content">
                     <h2>Game Development Prototype</h2>
                     <p>Created a simple 2D game prototype exploring mechanics & balance.</p>
                 </div>
             </article>
 
-            <!-- Project 4 -->
+            <!-- Project 4 card -->
             <article class="project-card">
-                <img src="images\Screenshot 2025-10-03 012857.png" alt="Portfolio Project">
+                <img src="images/Screenshot-2025-10-03-012857.png" alt="Portfolio Project">
                 <div class="content">
                     <h2>Personal Portfolio</h2>
                     <p>This site! A responsive HTML/CSS portfolio hosted on GitHub Pages.</p>
@@ -107,6 +129,7 @@
         </section>
     </main>
 
+    <!-- Footer section with contact info -->
     <footer>
         <p>© 2025 Malachi Rewane | Contact: <a href="mailto:mr.rewane@gmail.com">mr.rewane@gmail.com</a></p>
     </footer>

@@ -1,44 +1,53 @@
 <!DOCTYPE html>
+<!-- Declares this is an HTML5 document -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures mobile-friendly scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title for the browser tab -->
     <title>Malachi Rewane - Portfolio</title>
     
-    <!-- CSS Links -->
+    <!-- External CSS files for styling and responsiveness -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Mobile styles for small screens -->
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+    <!-- Tablet styles for medium screens -->
     <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <!-- Laptop/desktop styles for larger screens -->
     <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1025px)">
 
-    <!-- Google Font (Merriweather for all text) -->
+    <!-- Importing Google Font (Merriweather used on all pages) -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Page-Wide Font Styling -->
+    <!-- Inline base styles for text -->
     <style>
         body {
-            font-family: 'Merriweather', serif;
-            line-height: 1.6;
-            font-size: 16px;
-            color: #222;
-            margin: 0;
-            padding: 0;
+            font-family: 'Merriweather', serif; /* consistent font across the site */
+            line-height: 1.6;   /* improves readability */
+            font-size: 16px;    /* sets base font size */
+            color: #222;        /* dark grey for easy reading */
+            margin: 0;          /* removes browser default margins */
+            padding: 0;         /* removes browser default padding */
         }
         h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            margin-top: 1em;
-            margin-bottom: 0.5em;
+            font-weight: 700;   /* bold headings */
+            margin-top: 1em;    /* spacing above headings */
+            margin-bottom: 0.5em; /* spacing below headings */
         }
         p {
-            margin-bottom: 1em;
+            margin-bottom: 1em; /* space between paragraphs */
         }
     </style>
 </head>
 <body>
+    <!-- Header section: page title + navigation -->
     <header>
         <h1>About Me</h1>
         <nav>
             <ul>
+                <!-- Navigation links to other pages -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -47,26 +56,37 @@
         </nav>
     </header>
 
+    <!-- Main content area -->
     <main>
+        <!-- Section introducing personal background -->
         <section>
             <h2>About Me</h2>
+            <!-- Profile photo with alt text for accessibility -->
             <img src="images/malachi.webp" alt="Photo of Malachi Rewane" width="250">
+            <!-- Introduction paragraphs -->
             <p>Hello! I’m Malachi Rewane, a Networking and Information Technology Security student passionate about technology, programming, and creative projects. I enjoy learning how different systems connect and work together, whether it’s setting up secure networks, exploring cybersecurity concepts, or building websites that combine both functionality and design.</p>
             <p>Outside of school, I like tackling challenges that sharpen my skills, such as Capture the Flag (CTF) competitions, exploring new software tools, and working on hands-on projects that push me to think creatively. I also have experience in IT support, where I learned how valuable adaptability and problem-solving are when helping people with technical issues.</p>
             <p>I’m driven by curiosity, creativity, and a strong interest in how technology can make everyday life more efficient and secure. My goal is to continue growing into a versatile IT professional with a focus on networking and cybersecurity.</p>
         </section>
 
+        <!-- Section introducing a personal video -->
         <section>
             <h2>My Intro Video</h2>
+            <!-- Video element with controls + poster image -->
             <video width="400" controls poster="images/poster.jpg">
+                <!-- Video source file -->
                 <source src="videos/WIN_20251002_21_41_25_Pro.mp4" type="video/mp4">
+                <!-- Fallback text if browser doesn't support video -->
                 Your browser does not support the video tag.
             </video>
         </section>
     </main>
 
+    <!-- Footer with copyright + email contact -->
     <footer>
-        <p>© 2025 Malachi Rewane | Contact: <a href="mailto:mr.rewane@gmail.com">mr.rewane@gmail.com</a></p>
+        <p>© 2025 Malachi Rewane | Contact: 
+            <a href="mailto:mr.rewane@gmail.com">mr.rewane@gmail.com</a>
+        </p>
     </footer>
 </body>
 </html>

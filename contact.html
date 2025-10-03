@@ -1,34 +1,42 @@
 <!DOCTYPE html>
+<!-- Declares document as HTML5 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Makes layout responsive on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown on browser tab -->
     <title>Malachi Rewane - Portfolio</title>
     
-    <!-- CSS Links -->
+    <!-- CSS Links for styling and responsive layouts -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Mobile styles for screens ≤ 600px -->
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+    <!-- Tablet styles for screens 601px–1024px -->
     <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <!-- Laptop/desktop styles for screens ≥ 1025px -->
     <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1025px)">
 
-    <!-- Google Font (Merriweather for all text) -->
+    <!-- Google Font (Merriweather, used across all pages) -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Page-Wide Font Styling -->
+    <!-- Base font styling applied to body and form elements -->
     <style>
         body {
-            font-family: 'Merriweather', serif;
-            line-height: 1.6;
-            font-size: 16px;
-            color: #222;
+            font-family: 'Merriweather', serif; /* sets global font */
+            line-height: 1.6;   /* improves readability */
+            font-size: 16px;    /* base font size */
+            color: #222;        /* dark text for contrast */
             margin: 0;
             padding: 0;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
+            font-weight: 700;   /* bold headings */
             margin-top: 1em;
             margin-bottom: 0.5em;
         }
+        /* Ensure labels, inputs, and buttons match site font */
         p, label, input, textarea, button {
             font-family: 'Merriweather', serif;
         }
@@ -38,10 +46,12 @@
     </style>
 </head>
 <body>
+    <!-- Header with page title and navigation menu -->
     <header>
         <h1>Contact Me</h1>
         <nav>
             <ul>
+                <!-- Links to other sections of the portfolio -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -50,26 +60,37 @@
         </nav>
     </header>
 
+    <!-- Main content area with contact form -->
     <main>
+        <!-- Contact form (method=post means data would be sent to a server if connected) -->
         <form action="#" method="post">
+            <!-- Name input (required text field) -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
 
+            <!-- Email input (HTML5 email validation automatically checks correct format) -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
 
+            <!-- Phone input (restricted by pattern: exactly 10 digits, e.g., 1234567890) -->
             <label for="phone">Cell No.:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+            <input type="tel" id="phone" name="phone" 
+                   pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
 
+            <!-- Comments textarea (larger multi-line text box for user messages) -->
             <label for="comments">Comments:</label><br>
             <textarea id="comments" name="comments" rows="4" cols="40" required></textarea><br><br>
 
+            <!-- Submit button to send the form -->
             <button type="submit">Submit</button>
         </form>
     </main>
 
+    <!-- Footer with copyright + email link -->
     <footer>
-        <p>© 2025 Malachi Rewane | Contact: <a href="mailto:mr.rewane@gmail.com">mr.rewane@gmail.com</a></p>
+        <p>© 2025 Malachi Rewane | Contact: 
+            <a href="mailto:mr.rewane@gmail.com">mr.rewane@gmail.com</a>
+        </p>
     </footer>
 </body>
 </html>
