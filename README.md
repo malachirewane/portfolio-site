@@ -1,6 +1,6 @@
 # Malachi Rewane - Portfolio
 
-Welcome to my personal portfolio website!  
+Welcome to my personal portfolio website!!  
 
 ---
 
